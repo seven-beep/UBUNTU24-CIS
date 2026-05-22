@@ -2,6 +2,7 @@
 
 - name: Check OS version and family
   when:
+    - os_check is truthy
     - ansible_facts.distribution == 'Ubuntu'
     - ansible_facts.distribution_major_version is version_compare('24', '!=')
   tags: always

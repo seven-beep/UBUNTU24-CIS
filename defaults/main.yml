@@ -1,4 +1,7 @@
 ---
+# Run the OS validation check
+# Supported OSs will not need for this to be changed - see README
+os_check: true
 
 # defaults file for UBUNTU24-CIS
 # WARNING:
